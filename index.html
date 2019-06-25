@@ -1,87 +1,80 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC</title>
+    <!-- Using Bootstrap v4 -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-	<title>Module 2 Solution</title>
-</head>
+  </head>
 <body>
-	
-	<div id="menu">
-		<nav class="navbar navbar-dark bg-dark">
-  		<h1 align="center">Food LLC</h1>
-        </nav>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Food, LLC</a>
+      <button class="d-md-none navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <!-- Using d-sm-none class instead of visible-xs as visible-xs is not supported in Bootstrap v4 -->
+        <span id="toggler" class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#chicken">Chicken</a>
+          </li>
+          <hr>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#beef">Beef</a>
+          </li>
+          <hr>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="#sushi">Sushi</a>
+          </li>
+          <hr>
+        </ul>
+      </div>
+    </nav> 
+  </header>
+
+  <div id="main-content" class="container-fluid">
+    <h2 id="menu-categories-title" class="text-center">Our Menu</h2>
+     <div class="row" id="beef">
+      <section class="col-xs-12">
+        <h3 class="text-center">Beef</h3>
+        <p class="text-left">
+         In a large bowl, season the chicken breast with salt, pepper, 1 teaspoon of chili powder, and the teaspoon of turmeric. Brown the chicken, then remove from the pot, then add the onion, garam masala, remaining teaspoon of chili powder, the cumin, ginger, garlic, cayenne, cinnamon, salt and pepper. Add chicken again.
+        </p> 
+      </section>
+    </div>
+    <div class="row" id="chicken">
+      <section class="col-xs-12">
+        <h3 class="text-center">Chicken</h3>
+        <p class="text-left">
+         In a large bowl, season the chicken breast with salt, pepper, 1 teaspoon of chili powder, and the teaspoon of turmeric. Brown the chicken, then remove from the pot, then add the onion, garam masala, remaining teaspoon of chili powder, the cumin, ginger, garlic, cayenne, cinnamon, salt and pepper. Add chicken again.
+        </p> 
+      </section>
+    </div>
+    <div class="row" id="sushi">
+      <section class="col-xs-12">
+        <h3 class="text-center">Sushi</h3>
+        <p class="text-left">
+         In a large bowl, season the chicken breast with salt, pepper, 1 teaspoon of chili powder, and the teaspoon of turmeric. Brown the chicken, then remove from the pot, then add the onion, garam masala, remaining teaspoon of chili powder, the cumin, ginger, garlic, cayenne, cinnamon, salt and pepper. Add chicken again.
+        </p> 
+      </section>
     </div>
 
-<div id="mobile-menu">
 
-	<div class="pos-f-t">
-    
-  <nav class="navbar navbar-dark bg-dark">
-  	<div id="btn">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-     Food,LLC <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
-    <div class="collapse" id="navbarToggleExternalContent">
-     <div class="bg-dark p-4">
-      <h5 class="text-white h4">Chicken</h5>
-      <h5 class="text-white h4">Beef</h5>
-      <h5 class="text-white h4">Sushi</h5>
 
-      
-     </div>
-    </div>
-  </nav>
-</div>
-</div>
+  </div>
 
-<div class="container">
-  <h1>Our Menu</h1>
-</div>
-
-	
-	<div class="row">
-		
-	<div class="container col-lg-4 col-md-6 col-sm-12">
-		<section>
-		<div id="chicken">
-			Chicken
-		</div>
-		<p>
-			In a large bowl, season the chicken breast with salt, pepper, 1 teaspoon of chili powder, and the teaspoon of turmeric. Brown the chicken, then remove from the pot, then add the onion, garam masala, remaining teaspoon of chili powder, the cumin, ginger, garlic, cayenne, cinnamon, salt and pepper. Add chicken again.
-		</section>
-	</div>
-	<div class="container col-lg-4 col-md-6 col-sm-12">
-		<section>
-		<div id="beef">
-			Beef
-		</div>
-		<p>
-			Add the onion and curry leaves and cook over moderate heat until lightly browned, about 7 minutes. Add the garlic and ginger and cook until fragrant, 1 minute. Stir in the dissolved tomato paste along with the coriander, garam masala, cayenne, turmeric, dried chiles, star anise and cinnamon sticks. 
-		</p>
-		</section>
-	</div>
-	<div class="container col-lg-4 col-md-12 col-sm-12">
-		<section>
-		<div id="sushi">
-			Sushi
-		</div>
-		<p>
-			Sushi is a very healthy meal! It's a good source of heart healthy omega-3 fatty acids thanks to the fish it's made with. Sushi is also low in calories – there's no added fat. The most common type is nigiri sushi – fingers of sticky rice topped with a small filet of fish or seafood. 
-		</p>
-		</section>
-	</div>
-	</div>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
